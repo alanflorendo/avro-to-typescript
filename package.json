@@ -1,8 +1,14 @@
 {
-  "name": "@chasdevs/avro-to-typescript",
+  "name": "alanflorendo/avro-to-typescript",
   "version": "1.4.0",
   "description": "Package for converting Avro schema files (.avsc) to TypeScript class files",
-  "repository": "git@github.com:chasdevs/avro-to-typescript.git",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alanflorendo/avro-to-typescript"
+  },
+  "publishConfig": {
+    "registry": "https://www.npmjs.com/~alanflorendo"
+  },
   "keywords": [
     "avro",
     "avro schemas",
