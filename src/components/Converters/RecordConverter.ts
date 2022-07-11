@@ -43,6 +43,10 @@ export class RecordConverter extends BaseConverter {
     protected convertType(type: Type): string {
         if (typeof type === "string") {
             const converter = new PrimitiveConverter();
+            
+            if (type in this.recordCache) {
+                return type;
+            }
 
             return converter.convert(type);
         }
